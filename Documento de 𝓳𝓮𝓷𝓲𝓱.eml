@@ -1,0 +1,144 @@
+Delivered-To: jeniffer.abreu@escola.pr.gov.br
+Received: by 2002:a05:622a:2a96:b0:450:4462:78b6 with SMTP id kf22csp669460qtb;
+        Wed, 7 Aug 2024 17:44:08 -0700 (PDT)
+X-Received: by 2002:a05:622a:53c4:b0:451:cb5d:5067 with SMTP id d75a77b69052e-451d581cf65mr1618861cf.12.1723077847591;
+        Wed, 07 Aug 2024 17:44:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1723077847; cv=none;
+        d=google.com; s=arc-20160816;
+        b=n9OyVqFhUTokKdnBCofCX/nXrk06KwD14E+rTrnxh5axnis0WgPLyX0I92Xypadpd+
+         cUiL7En4tbzJUAmTXFdkGJ7VkZ3A+wwXlGW5Rz+l0N8OpzCgfVdHH2kbl0dFqbULWCWC
+         FY9CvJGTOf8QnN8Ovpf5X8BArVwUKY4mRjJkVFcssrLnME5ZvkheeVd/W3XlrVjvAnq/
+         EhluLviNVDj4vTYgEb6/m7KzMTCMc/I903dVBsAmx6/g3fj6zsAzaQlvkpqfkitonpkp
+         yv02x9kkQMh2OXjBUehVHfMdhBoH7BC1/krfk/iH2QNzNFvDiXKMNVo4cQt/96shkp5n
+         bgcQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=Y1dQZKoVt1jdrQ5BRPCxM5EmkkcCbPEvrjerV9M18EQ=;
+        fh=8f/U0hGCHp4kw/UqEXOQ+F8R0cUp9mme02xtCmKrQkU=;
+        b=WEhmvZvGNtUk9n6MUrxVsFHPcjYTuerdL8hnxTnW1oUdH50n85JIA8EBq8fFYILZZv
+         1AR2Jl7b50O4/wNk5wv5gI2AzVCE4OBhVkMtPobELCPPODEh/isbq8LeE2Y0tr37OPSB
+         P8IDMGhvBYxFYhXcxyOG/rM9qar8J145BSPzf/ALb4nDQQpQmNH87LUAM+w6zHKGre/q
+         0ywP55yMOoFLDgOGvk1QKZ1NbyYZ6MFRwOhck8uxMEsqGh9ip9mEnCBRjC/lpe4Jq2UM
+         231jiFIc7Kj6dBImu7TvHfBdkmG8URJ8fLdVjMEL00Eg6TQRydVKwCGqVkIynEtXic9u
+         l4kg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="Z/SXxSpH";
+       spf=pass (google.com: domain of jeniffercastro0403@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jeniffercastro0403@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=neutral header.i=@escola.pr.gov.br
+Return-Path: <jeniffercastro0403@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d75a77b69052e-451c86dff3esor29626781cf.2.2024.08.07.17.44.07
+        for <jeniffer.abreu@escola.pr.gov.br>
+        (Google Transport Security);
+        Wed, 07 Aug 2024 17:44:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of jeniffercastro0403@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b="Z/SXxSpH";
+       spf=pass (google.com: domain of jeniffercastro0403@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jeniffercastro0403@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=neutral header.i=@escola.pr.gov.br
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1723077847; x=1723682647; darn=escola.pr.gov.br;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Y1dQZKoVt1jdrQ5BRPCxM5EmkkcCbPEvrjerV9M18EQ=;
+        b=Z/SXxSpHLcefFv9iyS2IQRgbCUhX0t39/e789eutGeV2/2XoxDRzqkZ6S38jjzLX62
+         tJzN49puOCCfPbjfqmwWkIEV/hHdyIA6tsADFn9bG4hI7FzK/2G3qxzjuMjuZ6vSzEdx
+         d5r1wZ4JBLaJmYZ313jfdp+2s9zcCdXGFcthKD/c0mq6ynifgLPdTBWdnO+e4mOqBAid
+         zlbbx9HCMaY8Ja+W8iczs2dpIshaBcSXnHxXll0q6J9Go0NuyJohTLa0TGzO92D4Z9u/
+         Zk0i8i8/q/v6VMzdD7jiuTJRfrmFqdwGipgo2oK1KdNDiifAxKjjMEdLP5dADoldo15S
+         BR2g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1723077847; x=1723682647;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Y1dQZKoVt1jdrQ5BRPCxM5EmkkcCbPEvrjerV9M18EQ=;
+        b=vUmNBjsQfH+UwpWVHXTgUYdXcnCpINeDiD5lj3ZiHulby33jhVCIy61yzdm5nFgecl
+         sdC99QxtPN2caZ/zJi4xYfdo65ETfMBF2Q69oIfNPiFkUQ7jIojgUQI4osjlR2lR7mf7
+         kqdyMvYmsaXn15/804tw9EieFqZIBPJ1S6Xn30ouqavyptyxJTOPKkSC9uXHI4Offz8z
+         X7pxz5ZL/rOwu835urplXmMbAPxjXRDJKriRYsV/SwdGVQxfmN77I3K0zy54A5QaxYFb
+         R+YRrwhOuPmWUwF29yohTLAHWGsTXH+LyJXlw3rHGrI6KsQPlhChK9bNDb2YfTfYWMwH
+         H7Bw==
+X-Gm-Message-State: AOJu0YzXE+Q8Cc0HW/k9aCJzo6PkquPJQZGsoBqTbXQDodgIUvEaWkr9
+	h3M9lWxfj0CaI2LklWohIracohdP6pvw6X8spt8ZIysPwUXdbbHtyQrM9yZpB6/RkJ+l5OsRiGF
+	C4/xn7NEzKJS4/ZP8nkFAftpv1qpsrfv5r98=
+X-Google-Smtp-Source: AGHT+IHDIYV5rOurIkZJACWUS5qrDuqEOH6ie48U5QJGGuIXV4XG9RqAO4ta91weyxpiyp6RDmauAId1bKW/RI60gM0=
+X-Received: by 2002:a05:622a:6184:b0:447:ecd9:9f77 with SMTP id
+ d75a77b69052e-451d57bdc60mr1430291cf.5.1723077846824; Wed, 07 Aug 2024
+ 17:44:06 -0700 (PDT)
+MIME-Version: 1.0
+From: Jeniffer Castro <jeniffercastro0403@gmail.com>
+Date: Wed, 7 Aug 2024 21:43:55 -0300
+Message-ID: <CAHxkJhNrMF-CPr1NpaiWnMAC5U_BP3uJWzYoJUiTZWyyL6gQuw@mail.gmail.com>
+Subject: =?UTF-8?B?RG9jdW1lbnRvIGRlIPCdk7PwnZOu8J2Tt/Cdk7LwnZOx?=
+To: jeniffer.abreu@escola.pr.gov.br
+Content-Type: multipart/mixed; boundary="000000000000fb2ab4061f215292"
+
+--000000000000fb2ab4061f215292
+Content-Type: multipart/alternative; boundary="000000000000fb2ab2061f215290"
+
+--000000000000fb2ab2061f215290
+Content-Type: text/plain; charset="UTF-8"
+
+
+
+--000000000000fb2ab2061f215290
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="auto"></div>
+
+--000000000000fb2ab2061f215290--
+--000000000000fb2ab4061f215292
+Content-Type: application/pdf; name="DOC-20240606-WA0026."
+Content-Disposition: attachment; filename="DOC-20240606-WA0026."
+Content-Transfer-Encoding: base64
+Content-ID: <1912f71322cb2659eb41>
+X-Attachment-Id: 1912f71322cb2659eb41
+
+JVBERi0xLjQKJeLjz9MKMyAwIG9iago8PC9GaWx0ZXIvRmxhdGVEZWNvZGUvTGVuZ3RoIDY3OT4+
+c3RyZWFtCnicrVTLTuMwFN3nK+4SpDbYeZfVlLYgKiBAMrNiY1y3GCU22ImQ5j/4olnMd6BZjGYx
+PzCrcV4zAQqqAEVVc+Nzr8891z631q21l1oYkHkwhNgOQvCiwI5cSHNrZx8DdiBdWqhGqJW1db+d
+XptwZc1S68w8dQE/qBLDyLddk7gw60Mval/cyPbbV1z9rysKXdHqg8G4Bhs0SR1kThRZlQ+wkJCU
+GSR0AInMCsYVGQD2gQip4WILezsY7zgIRRfbXdGh+3JVqX9B+ifjEkyVkQ9DIDdEFSRnopCAkQOX
+maSyYjyECaFXstrRgMeKlPRBcQJm4fR8AJEbomgYILTBthOW2bvg4dEoClEwCqINcmbDnPBsF66Z
+4MslU5ToQknkIffTqlqxqcw3KHMkKclgwUAQTXnd5i504k5rcddV6Wb4bGId6OMmPdOFLIHlcFlq
+SiqqZU5A3khVlIIviPlgRkSAC045UZBzcUWAEqWawyBFhZBaEzNLxUykgAFVTFOmNlDoRskl15pL
+QbJKHzYAKkWh+GXJhTl+9eYSdEmZ1hIWJlArIvhX8vOH/DjtnFa7Dl4jzUHfQNuhgTW7o649A1UW
+sj24axPOD/qSC82FhGO24PL/gKoMODDucLeePHq6SX+GVGbmakwY/Z2ZO3JsRsOyjOn12a8o1G+8
+gT2V5l+3tSPd1j8H5jX3s769YWNs2IXQd2ubavzNcatKrTxhEBgfWyvRvL12cEKKh6qlKTN+UF3B
+tYIZLo+ZIBv3CzeOGYyiympzy/cd01wbZlbynLwf1RaL+tyx1+Puvcx9Op7GCZzOkiQeHybv4OuH
+YZ9vG77C14+cN/CN9+az9PBL/B6myHvEtAlfY4pGb2C6H58fj79/i2E2/TwZTw7jk/HRS6z/Au1e
+v3gKZW5kc3RyZWFtCmVuZG9iago1IDAgb2JqCjw8L0NvbnRlbnRzIDMgMCBSL1R5cGUvUGFnZS9S
+ZXNvdXJjZXM8PC9Qcm9jU2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXS9G
+b250PDwvRjEgMSAwIFIvRjIgMiAwIFI+Pj4+L1BhcmVudCA0IDAgUi9NZWRpYUJveFswIDAgNTk1
+IDg0Ml0+PgplbmRvYmoKNiAwIG9iago8PC9EZXNjZW50IC0yNTAvQ2FwSGVpZ2h0IDYzMS9TdGVt
+ViA4MC9UeXBlL0ZvbnREZXNjcmlwdG9yL0ZsYWdzIDMyL0ZvbnRCQm94Wy00NzYgLTE5MyAxMjEz
+IDk1Ml0vRm9udE5hbWUvQ2FsaWJyaS9JdGFsaWNBbmdsZSAwL0FzY2VudCA3NTA+PgplbmRvYmoK
+MSAwIG9iago8PC9TdWJ0eXBlL1RydWVUeXBlL0ZpcnN0Q2hhciAzMi9UeXBlL0ZvbnQvQmFzZUZv
+bnQvQ2FsaWJyaS9Gb250RGVzY3JpcHRvciA2IDAgUi9FbmNvZGluZy9XaW5BbnNpRW5jb2Rpbmcv
+TGFzdENoYXIgMjUwL1dpZHRoc1syMjYgMCAwIDAgMCAwIDAgMCAzMDMgMzAzIDAgMCAyNDkgMzA2
+IDI1MiAzODYgNTA2IDUwNiA1MDYgNTA2IDUwNiA1MDYgNTA2IDUwNiA1MDYgNTA2IDI2NyAwIDAg
+MCAwIDAgODk0IDU3OCA1NDMgNTMzIDYxNSA0ODggNDU5IDAgMCAyNTEgMzE4IDAgNDIwIDg1NCA2
+NDUgNjYyIDUxNiAwIDU0MiA0NTkgNDg3IDY0MSA1NjcgMCAwIDAgMCAwIDAgMCAwIDAgMCA0Nzkg
+NTI1IDQyMiA1MjUgNDk3IDMwNSA0NzAgNTI1IDIyOSAyMzkgMCAyMjkgNzk4IDUyNSA1MjcgNTI1
+IDAgMzQ4IDM5MSAzMzQgNTI1IDAgMCAwIDAgMzk1IDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAg
+MCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCA0OTggMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAw
+IDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAg
+MCAwIDAgNTc4IDAgMCAwIDUzMyAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAw
+IDAgMCAwIDAgMCAwIDQ3OSAwIDQ3OSAwIDAgMCA0MjIgMCA0OTcgMCAwIDAgMjI5IDAgMCAwIDAg
+MCAwIDAgMCAwIDAgMCAwIDUyNV0+PgplbmRvYmoKMiAwIG9iago8PC9TdWJ0eXBlL1R5cGUxL1R5
+cGUvRm9udC9CYXNlRm9udC9IZWx2ZXRpY2EvRW5jb2RpbmcvV2luQW5zaUVuY29kaW5nPj4KZW5k
+b2JqCjQgMCBvYmoKPDwvS2lkc1s1IDAgUl0vVHlwZS9QYWdlcy9Db3VudCAxPj4KZW5kb2JqCjcg
+MCBvYmoKPDwvVHlwZS9DYXRhbG9nL1BhZ2VzIDQgMCBSPj4KZW5kb2JqCjggMCBvYmoKPDwvTW9k
+RGF0ZShEOjIwMjQwNjA2MjMyMjU4LTAzJzAwJykvQ3JlYXRpb25EYXRlKEQ6MjAyNDA2MDYyMzIy
+NTgtMDMnMDAnKS9Qcm9kdWNlcihpVGV4dK4gNS40LjEgqTIwMDAtMjAxMiAxVDNYVCBCVkJBIFwo
+QUdQTC12ZXJzaW9uXCkpPj4KZW5kb2JqCnhyZWYKMCA5CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAw
+MDAwMTA4MyAwMDAwMCBuIAowMDAwMDAxNzk3IDAwMDAwIG4gCjAwMDAwMDAwMTUgMDAwMDAgbiAK
+MDAwMDAwMTg4NSAwMDAwMCBuIAowMDAwMDAwNzYxIDAwMDAwIG4gCjAwMDAwMDA5MjcgMDAwMDAg
+biAKMDAwMDAwMTkzNiAwMDAwMCBuIAowMDAwMDAxOTgxIDAwMDAwIG4gCnRyYWlsZXIKPDwvSW5m
+byA4IDAgUi9JRCBbPGU2OWVkOWIxNTk4M2VlNmI1YWNjNmQ3ZmE1NTM1ZDczPjwzMDU1MWJlMGYw
+NTYyNDgxY2VjMDg5YTMyNGQ1YjY2Mz5dL1Jvb3QgNyAwIFIvU2l6ZSA5Pj4KJWlUZXh0LTUuNC4x
+CnN0YXJ0eHJlZgoyMTM0CiUlRU9GCg==
+--000000000000fb2ab4061f215292--
